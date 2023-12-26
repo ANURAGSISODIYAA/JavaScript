@@ -1,4 +1,4 @@
-// Const variable can be change once defined
+// Const variable cannot be change once defined
 const Accountname="Anurag";
 
 /* variables declared by let are only available inside the block
