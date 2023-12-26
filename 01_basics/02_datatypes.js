@@ -44,3 +44,16 @@ let numbers = [1, 2, 3, 4, 5];
 const sum = function add(a, b) {
   return a + b;
 }
+
+// Stack(Primitve) And Heap(Non-primitve)
+
+// Primitive data types (e.g., numbers, booleans, and references to objects) 
+// are stored directly in the stack.(Stack me copy milta hai )
+
+// let number = 42; // The value 42 is stored directly in the stack
+
+//When you create an object, memory is allocated in the heap, and 
+//a reference to that object is stored in the stack.(heap me copy nhi milta refrence milat mltb original value change ho jaygi )
+
+ // let obj = { key: 'value' };
+ // The object is stored in the heap, and a reference is stored in the stack
