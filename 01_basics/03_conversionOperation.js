@@ -59,5 +59,11 @@ let gameCounter = 100
 ++gameCounter;
 console.log(gameCounter);
 
+/* If used postfix, with operator after operand (for example, x++), 
+the increment operator increments and returns the value before incrementing.
+
+If used prefix, with operator before operand (for example, ++x), 
+the increment operator increments and returns the value after incrementing.*/
+
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
