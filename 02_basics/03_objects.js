@@ -38,3 +38,4 @@ jsObj.greeting2 = function(){
 
 jsObj.greeting()
 jsObj.greeting2()
+console.log(jsObj)
