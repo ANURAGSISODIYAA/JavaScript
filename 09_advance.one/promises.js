@@ -21,13 +21,36 @@
 // })
 
 
-const promiseThree = new Promise(function(resolve,reject){
-          setTimeout(()=>{
-            console.log("Async task is complete");
-            resolve({Name:"Anurag",lang:"Javascript"});
-          })
+// const promiseThree = new Promise(function(resolve,reject){
+//           setTimeout(()=>{
+//             console.log("Async task is complete");
+//             resolve({Name:"Anurag",lang:"Javascript"});
+//           })
+// })
+
+// promiseThree.then(function(){
+//     console.log(user)
+// })
+
+const promiseFour = new Promise(function(resolve,reject){
+    setTimeout(()=>{
+      let error = false;
+      if(error){
+        resolve({Name:"Anurag",lang:"Javascript"});
+      }else{
+        reject("ERROOOOOOOOOOOR")
+      }
+     
+    })
 })
 
-promiseThree.then(function(user){
-    console.log(user)
+promiseFour.then(function(user){
+console.log(user)
+return user.Name;
+}).then((Name)=>{
+    console.log(Name);
+}).catch((error)=>{
+    console.log(error)
+}).finally(()=>{
+    console.log("The Promise either rejected or resolved ");
 })
